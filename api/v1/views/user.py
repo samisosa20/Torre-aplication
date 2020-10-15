@@ -6,7 +6,7 @@ import json
 from flask import request, abort, jsonify, make_response, request
 
 
-@app_views.route('/user/<username>', methods=['GET'], strict_slashes=False)
+@app_views.route('/people/<username>', methods=['GET'], strict_slashes=False)
 def get_user(username):
     """ Retrieves an user """
     dataUsers = {}

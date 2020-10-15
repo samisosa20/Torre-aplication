@@ -101,3 +101,14 @@ img {
   border-bottom: 3px solid #cddc39;
   border-color: none;
 }
+
+.btn-torre {
+  background-color: #cddc39;
+  color: black;
+  width: 25%;
+}
+
+.btn-torre:hover {
+  background-color: #cddc39;
+  color: black;
+}

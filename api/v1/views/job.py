@@ -12,6 +12,7 @@ def get_job(id_job):
     dataJob = {}
     dataJob = requests.get(
         'https://torre.co/api/opportunities/{}'.format(id_job))
+
     if not dataJob:
         abort(404)
 
