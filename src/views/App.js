@@ -38,7 +38,7 @@ function App() {
     dic[type] = data;
     console.log(dic);
     await axios
-      .post("http://localhost:5000/api/v1/" + type, dic)
+      .post("http://35.229.95.227:5000/api/v1/" + type, dic)
       .then((res) => {
         console.log(res.data.results);
         setState(res.data.results);
@@ -50,7 +50,7 @@ function App() {
     dic[type] = id;
     console.log(dic);
     await axios
-      .get("http://localhost:5000/api/v1/" + type + "/" + id, dic)
+      .get("http://35.229.95.227:5000/api/v1/" + type + "/" + id, dic)
       .then((res) => {
         console.log(res.data);
         setInfo(res.data);
