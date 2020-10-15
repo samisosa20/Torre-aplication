@@ -86,7 +86,7 @@ img {
   padding-left: 7px;
 }
 
-.nav-tabs .nav-item.show .nav-link,
+/*.nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link {
   color: rgba(255, 255, 255, 0.65);
   background-color: none !important;
@@ -94,10 +94,9 @@ img {
   border-color: transparent;
 }
 
-/*.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
   color: #cddc39;
-  background-color: none;
   border-bottom: 3px solid #cddc39;
   border-color: none;
 }*/

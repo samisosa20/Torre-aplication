@@ -10,7 +10,7 @@ import {
   Modal,
 } from "react-bootstrap";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import $ from "jquery";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/css/App.css";
@@ -65,11 +65,11 @@ function App() {
           variant="tabs"
           defaultActiveKey={"/search/" + type}
         >
-          <Nav.Item>
-            <Nav.Link href="/search/people">PERSONAS</Nav.Link>
+          <Nav.Item className="mr-2">
+            <Link to="/search/people">PERSONAS</Link>
           </Nav.Item>
-          <Nav.Item>
-            <Nav.Link href="/search/job">EMPLEOS</Nav.Link>
+          <Nav.Item className="ml-2">
+            <Link to="/search/job">EMPLEOS</Link>
           </Nav.Item>
         </Nav>
       </header>
