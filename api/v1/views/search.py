@@ -22,8 +22,15 @@ def get_oppor():
 def get_people():
     """ Retrieves an user """
     dataPeople = {}
-    dataPeople = requests.post(
-        'https://search.torre.co/people/_search/')
+    post = request.get_json()
+
+    if post is None or type(post) != dict:
+        return jsonify({'error': 'Not a JSON'}), 400
+
+    if post.get('name'):
+        dataPeople = requests.post(
+            'https://search.torre.co/people/_search/', json={"name": {"term": post.get('name')}})
+
     if not dataPeople:
         abort(404)
 
